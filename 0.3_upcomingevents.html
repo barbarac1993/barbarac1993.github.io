@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Upcoming Events</title>
+</head>
+
+<body class="niethome">
+
+
+    <div class="col-md-12">
+        <ul class="social-network social-circle">
+            <li>
+                <a href="#" class="icoFacebook" title="Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="icoYelp" title="Youtube">
+                    <i class="fa fa-yelp"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <header>
+        <nav class="navbar navbar-light navbar-expand navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="./images/logozwart.png" alt="logo Cachai" />
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="0.1_aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="0.2.1_food.html">Food</a>
+                            <a class="dropdown-item" href="0.2.2_dessert.html">Dessert</a>
+                            <a class="dropdown-item" href="0.2.3_drinks.html">Drinks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="0.3_upcomingevents.html">Upcoming events
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="0.4_contact.html">Contact</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="0.5_bookus.html">Book us</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <h1 id='upcomingeventstitle'>Upcoming Events</h1>
+                <p id='upcomingeventstext'><b>Ostend</b><br>12-14 May 2018<br>12h-00h<br><br>
+                    <b>Ghent</b><br>24-28 May 2018<br>12h-00h<br><br>
+                    <b>Antwerp</b><br>3-5 June 2018<br>12h-00h<br><br>
+                    <b>Bruges</b><br>9-11 June 2018<br>12h-00h
+                </p>
+            </div>
+
+            <div class="col-md-8 col-sm-12" id="map"></div>
+        </div>
+    </div>
+
+</body>
+
+<div class="footer">
+    <div class="row">
+        <div class="col-sm-6">
+            <p>©Barbara Courtens PDF-link</p>
+        </div>
+        <div class="col-sm-6">
+            <ul class="social-network social-circle">
+                <li>
+                    <a href="#" class="icoFacebook" title="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icoYelp" title="Youtube">
+                        <i class="fa fa-yelp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFlnqVlxD_L6ELi59aASliP6A5w9wunDI"></script>
+
+<script>
+    var mapstylr = [
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 50
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#FFDD00"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#FFDD00"
+            },
+            {
+                "saturation": -40
+            },
+            {
+                "lightness": -2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#FFDD00"
+            },
+            {
+                "saturation": -50
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.school",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.place_of_worship",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.station",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.attraction",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.business",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.medical",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#FFDD00"
+            },
+            {
+                "saturation": 2
+            }
+        ]
+    },
+    {
+        "featureType": "poi.sports_complex",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "weight": 0.1
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "invert_lightness": false
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": 5.54
+            },
+            {
+                "saturation": 100
+            },
+            {
+                "gamma": 0.01
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": 0.1
+            }
+        ]
+    },
+    {
+        "featureType": "administrative.country",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "weight": 0.1
+            },
+            {
+                "saturation": 60
+            }
+        ]
+    }
+];						
+
+
+    var map;
+    function initialize() {
+        var mapOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(50.981,  -114.11509999999998),
+            styles: mapstylr
+        };
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+                            
+</script>
+
+</html>

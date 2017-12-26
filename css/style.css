@@ -493,7 +493,8 @@ p {
 	.newsletterform {
 		margin-left: 10px;
 	}
-	.img-fluid {
+
+	.img-fluid.nietzichtbaar {
 		display: none;
 	}
 }

@@ -1,53 +1,87 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-.img {
-  margin-right: -15px;
-  margin-left: -15px;
-  padding-bottom: 62.5%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 50px;
-}
+/* navigatie */
 
 .navbar {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .navbar .nav-item {
 	position: relative;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: left;
-  padding-top: 10px;
-  padding-left: 10px;
+.navbar-nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	width: 100%;
+	font-family: 'Nunito', sans-serif;
 }
 
-html {
-  height: 100%;
+.dropdown-menu {
+	background: transparent;
 }
 
-body {
-	padding-bottom: 75px;
+.logo {
+	padding-left: 70px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 220px;
 }
 
-
-.home {
-  background: url('../images/photo1.jpg') no-repeat center center;
-  background-size: cover;
-	height: 100%;
+ul {
+	list-style-type: none;
 }
 
-.niethome {
-	background-color: #FFDD00;
-	padding-bottom: 0;	
+.socialmediayoutube {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	position: absolute;
+	right: 93px;
+	top: 10px;
+}
+
+.socialmediafacebook {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	position: absolute;
+	right: 130px;
+	top: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+
+.navbar-light .navbar-nav .open>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .nav-link.active {
+	color: white;
+	text-transform: uppercase;
+}
+
+.home .navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-collapse .justify-content-end .home-navigatie .collapse .show {
+	text-align: right;
+}
+
+/* afbeeldingen */
+
+.img {
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-bottom: 62.5%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-height: 50px;
 }
 
 .round-images {
@@ -61,108 +95,267 @@ body {
 	text-align: center;
 }
 
-/*=========================
-  Icons
- ================= */
 
-/* footer social icons */
-ul.social-network {
-	list-style: none;
-  text-align: right;
-	margin-left:0 !important;
-  padding: 0;
-}
-ul.social-network li {
-	display: inline;
-	margin: 0 5px;
+/* allerlei */
+
+html {
+	height: 100%;
 }
 
 
-/* footer social icons */
-.social-network a.icoFacebook:hover {
-	background-color:#3B5998;
-}
-.social-network a.icoYelp:hover {
-	background-color:#CB2027;
-}
+/* footer */
 
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i,
-.social-network a.icoInstagram:hover i, .social-network a.icoYelp:hover i {
-	color:#fff;
-}
-a.socialIcon:hover, .socialHoverClass {
-	color:#44BCDD;
-}
-
-.social-circle li a {
-	display:inline-block;
-	position:relative;
-	margin:0 auto 0 auto;
-	-moz-border-radius:50%;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-	text-align:center;
-	width: 50px;
-	height: 50px;
-	font-size:20px;
-}
-.social-circle li i {
-	margin:0;
-	line-height:50px;
-	text-align: center;
-}
-
-.social-circle li a:hover i, .triggeredHover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-ms--transform: rotate(360deg);
-	transform: rotate(360deg);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;
-}
-.social-circle i {
-	color: #fff;
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-circle a {
-  background-color: #D3D3D3;
- }
-
-.icoFacebook {
-	align-content: right;
-}
-
-.navbar-nav {
-	display: flex;
-	justify-content: space-around;
-	align-items: stretch;
-	width: 100%;
-}
-/*
-.navbar-toggler-right {
-	position: relative;
-}
-*/
 .footer {
-	height: 40px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	color: black;
+	text-align: left;
+	padding-top: 3px;
+	padding-left: 10px;
+	height: 30px;
 	font-size: 10pt;
-	padding: Opx;
 }
 
-h1 {
+.footerfont {
+	font-family: 'Nunito', sans-serif;
+	font-size: 12px;
+	padding-left: 70px;
+	color: black;
+}
+
+.socialmediayoutubefooter {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	position: absolute;
+	right: 93px;
+	bottom: 19px;
+}
+
+.socialmediafacebookfooter {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	position: absolute;
+	right: 130px;
+	bottom: 19px;
+}
+
+
+/* midden */
+
+.home {
+	background: url('../images/photo1.jpg') no-repeat center center;
+	background-size: cover;
+	height: 100%;
+}
+
+.aboutus {
+	background-color: #FFDD00;
+	padding-bottom: 0px;
+}
+
+.aboutustitle {
+	padding-left: 40px;
+}
+
+.aboutustext {
+	padding-left: 40px;
+	padding-right: 70px;
+}
+
+.food {
+	background-color: #FFDD00;
+	padding-bottom: 0;
+}
+
+.foodtitle {
+	padding-left: 80px;
+}
+
+.foodtext {
+	text-align: left;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.dessert {
+	background-color: #FFDD00;
+	padding-bottom: 0;
+}
+
+.drinks {
+	background-color: #FFDD00;
+	padding-bottom: 0;
+}
+
+.upcomingevents {
+	background-color: #FFDD00;
+	padding-bottom: 0;
+}
+
+.upcomingeventstitle {
+	padding-left: 80px;
+}
+
+.upcomingeventstext {
+	padding-left: 80px;
+	padding-right: 40px;
+}
+
+.contact {
+	background-color: #FFDD00;
+	padding-bottom: 0;
+}
+
+.contacttitle {
+	padding-left: 80px;
+}
+
+.contacttext {
+	padding-left: 80px;
+	padding-right: 40px;
+}
+
+.bookus {
+	background-color: #FFDD00;
+	padding-bottom: 0;
+}
+
+.bookustitle {
+	padding-left: 80px;
+}
+
+.bookustext {
+	padding-left: 80px;
+	padding-right: 40px;
+}
+
+/* button */
+
+.btn-primary {
+	text-align: center;
+	border-radius: 20px;
+	color: black;
+	background-color: white;
 	font-family: 'Nunito', sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
+	border: transparent;
+	box-shadow: 2px 2px 0px 1px black;
+}
+
+.btn-primary.aboutusbutton {
+	margin-left: 40px;
+}
+
+.btn-primary.contactbutton {
+	margin-left: 80px;
+}
+
+.btn-primary.contactbutton.radioformbutton {
+	margin-left: 40px;
+}
+
+.btn-primary:hover {
+	background-color: black;
+	color: white;
+}
+
+.btn-primary:active {
+	position: relative;
+	top: 1px;
+	color: #FFDD00;
+}
+
+a:link {
+    color: black; 
+    background-color: transparent; 
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:visited {
+    color: grey;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a:active {
+    color: black;
+    background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/*
+
+.socialmediafacebook:hover {
+	color: white;
+}
+
+a:hover.footerbutton {
+	background-color: #B61618;
+	color: #ddd;
+	border: none;
+	text-decoration: none;
+	}	
+
+*/
+
+/* form */
+
+.form-group {
+	padding-left: 80px;
+	padding-right: 40px;
+}
+
+.form-control {
+	border-radius: 20px;
 	color: black;
+	background-color: white;
+	font-family: 'Nunito', sans-serif;
+	font-style: italic;
+	box-shadow: 0px 1px 0px 1px black;
+}
+
+.newsletterform {
+	margin-left: -40px;
+	padding-right: 40px;
+}
+
+.radioform {
+	padding-left: 40px;
+	border-radius: 20px;
+	color: black;
+	font-family: 'Nunito', sans-serif;
+}
+
+div.radioform {
+	padding-bottom: 20px;
+}
+
+/* tekst */
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: Bold;
+	text-transform: uppercase;
+	color: black;
+	font-size: 25pt;
+	padding-top: 20px;
+	padding-bottom: 25px;
 }
 
 h2 {
@@ -174,27 +367,17 @@ h2 {
 	padding-left: 80px;
 	padding-right: 80px;
 	padding-top: 30px;
+	font-size: 20pt;
 }
 
-.logo {
-padding-left: 70px;
-background-position: 50% 50%;
-background-repeat: no-repeat;
-background-size: cover;
-width: 220px;
-}
-
-.footerfont {
+h3 {
 	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
-	font-size: 12px;
-	padding-left: 70px;
-	color: black;
-}
-
-#aboutustext {
-	padding-left: 40px;
-	padding-right: 70px;
+	color: white;
+	text-align: center;
+	padding-top: 250px;
+	font-size: 40pt;
 }
 
 p {
@@ -203,80 +386,132 @@ p {
 	font-family: 'Nunito', sans-serif;
 }
 
-#aboutustitle {
-	padding-left: 40px;
+.unsubscribe {
+	font-size: 12px;
+	line-height: 15px;
+	padding-top: 260px;
 }
-
-#foodtitle {
-	padding-left: 80px;
-}
-
-#tekstlinks {
-	text-align: left;
-	padding-left: 80px;
-	padding-right: 80px;
-}
-
-
-#upcomingeventstext{
-	padding-left: 80px;
-	padding-right: 40px;
-}
-
-#upcomingeventstitle{
-	padding-left: 80px;
-}
-
-#contacttitle {
-	padding-left: 80px;
-}
-
-#contacttext {
-	padding-left: 80px;
-	padding-right: 40px;
-}
-
-.form-group {
-	padding-left: 80px;
-	padding-right: 40px;
-}
-
-#bookustitle {
-	padding-left: 80px;
-}
-
-#bookustext {
-	padding-left: 80px;
-	padding-right: 40px;
-}
-
-
 
 @media screen and (max-width: 480px) {
-	#tekstlinks {
+	.foodtitle {
+		padding-left: 30px;
+	}
+	.foodtext {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-
 	.round-images h2 {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+	.contacttitle {
+		padding-left: 30px;
+	}
+	.contacttext {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.btn-primary.aboutusbutton {
+		margin-left: 40px;
+	}
+	.btn-primary.contactbutton {
+		margin-left: 30px;
+	}
+	.form-control {
+		margin-left: -50px;
+	}
+	.aboutustext {
+		padding-right: 30px;
+	}
+	.bookustitle {
+		padding-left: 30px;
+	}
+	.bookustext {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.upcomingeventstitle {
+		padding-left: 30px;
+	}
+	.upcomingeventstext {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.logo {
+		padding-left: 20px;
+	}
+	.food {
+		padding-bottom: 50px;
+	}
+	.dessert {
+		padding-bottom: 50px;
+	}
+	.drinks {
+		padding-bottom: 50px;
+	}
+	.footerfont {
+		padding-left: 20px;
+	}
+	.socialmediayoutubefooter {
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		position: absolute;
+		right: 30px;
+		bottom: 35px;
+	}
+	.socialmediafacebookfooter {
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		position: absolute;
+		right: 67px;
+		bottom: 35px;
+	}
+	.socialmediayoutube {
+		display: none;
+	}
+	.socialmediafacebook {
+		display: none;
+	}
+	.nietzichtbaar {
+		display: none;
+	}
+	#map {
+		min-height: 400px;
+	}
+	h3 {
+		font-size: 35px;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 190px;
+		line-height: 40px;
+	}
+	.unsubscribe {
+		padding-top: 230px;
+	}
+	.newsletterform {
+		margin-left: 10px;
+	}
+	.img-fluid {
+		display: none;
+	}
 }
 
 
+}
 @media screen and (max-width: 767px) {
-	.top .social-network {
+	.social-network-navigatie {
 		display: none;
 	}
-
-	.navbar .nav-item, .navbar a.dropdown-item {
+	
+	.navbar .nav-item,
+	.navbar a.dropdown-item {
 		text-align: right;
 		color: black;
 	}
 
-	.nietzichtbaar {
-		display: none;
+	#map {
+		min-height: 400px;
 	}
 }
-

@@ -7,102 +7,118 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- FAVICON BEGIN-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/manifest.json">
+    <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FAVICON EINDE-->
     <title>About Us</title>
 </head>
 
-<body class="niethome">
-
-
-    <div class="col-md-12">
-        <ul class="social-network social-circle">
-            <li>
-                <a href="#" class="icoFacebook" title="Facebook">
-                    <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="icoYelp" title="Youtube">
-                    <i class="fa fa-yelp"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-
-
-
-    <header>
-        <nav class="navbar navbar-light navbar-expand navbar-toggleable-sm">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img class="logo" src="./images/logozwart.png" alt="logo Cachai" /></a>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="0.1_aboutus.html">About us
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="0.2.1_food.html">Food</a>
-                            <a class="dropdown-item" href="0.2.2_dessert.html">Dessert</a>
-                            <a class="dropdown-item" href="0.2.3_drinks.html">Drinks</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="0.3_upcomingevents.html">Upcoming events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="0.4_contact.html">Contact</a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="0.5_bookus.html">Book us</a>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<body class="aboutus">
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <img class="img-fluid" src="./images/photo2.jpg" alt="heart" />
+            <div class="col-sm-6">
+                <p></p>
             </div>
-
-            <div class="col-md-6 col-sm-12">
-                <h1 id='aboutustitle'>About Us</h1>
-                <p id="aboutustext">Experience the South American cuisine with our new foodtruck ¡¿Cachai?! 
-                    We offer typical South American dishes, desserts and drinks. 
-                    Sign up for our newsletter to know where we will be or book our foodtruck for your party!</p>
-                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    Newsletter!
-                </button>
+            <div class="col-sm-6">
+                <ul class="social-network-navigatie social-circle">
+                    <li>
+                        <a href="https://www.facebook.com/barbara.courtens.75">
+                            <img class="socialmediafacebook" src="./images/facebook.png" alt="Link Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCqCGihRsJNYWZ0_mfh5_vQg">
+                            <img class="socialmediayoutube" src="./images/youtube.png" alt="Link Youtube">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+
+    <header>
+        <header>
+            <nav class="navbar navbar-light navbar-expand navbar-toggleable-sm">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="./images/logozwart.png" alt="logo Cachai" />
+                </a>
+                <div class="collapse navbar-collapse justify-content-end home-navigatie" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="0.1_aboutus.html">About us
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="0.2.1_food.html">Food</a>
+                                <a class="dropdown-item" href="0.2.2_dessert.html">Dessert</a>
+                                <a class="dropdown-item" href="0.2.3_drinks.html">Drinks</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="0.3_upcomingevents.html">Upcoming events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="0.4_contact.html">Contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="0.5_bookus.html">Book us</a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <img class="img-fluid" src="./images/photo2.jpg" alt="heart" />
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <h1 class='aboutustitle'>About Us</h1>
+                    <p class="aboutustext">Experience the South American cuisine with our new foodtruck ¡¿Cachai?! We offer typical South American
+                        dishes, desserts and drinks. Sign up for our newsletter to know where we will be or book our foodtruck
+                        for your party!
+                    </p>
+                    <a href="0.1.1_newsletter.html"></a><button type="button" class="btn btn-primary aboutusbutton" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        Newsletter!
+                    </button></a>
+                </div>
+            </div>
+        </div>
 
 </body>
 
 <div class="footer">
     <div class="row">
         <div class="col-sm-6">
-            <p>©Barbara Courtens PDF-link</p>
+            <p class='footerfont'>©Barbara Courtens - Arteveldehs - PDF-link</p>
         </div>
         <div class="col-sm-6">
             <ul class="social-network social-circle">
                 <li>
-                    <a href="#" class="icoFacebook" title="Facebook">
-                        <i class="fa fa-facebook"></i>
+                        <a href="https://www.facebook.com/barbara.courtens.75">
+                        <img class="socialmediafacebookfooter" src="./images/facebook.png" alt="Link Facebook">
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="icoYelp" title="Youtube">
-                        <i class="fa fa-yelp"></i>
+                        <a href="https://www.youtube.com/channel/UCqCGihRsJNYWZ0_mfh5_vQg">
+                        <img class="socialmediayoutubefooter" src="./images/youtube.png" alt="Link Youtube">
                     </a>
                 </li>
             </ul>

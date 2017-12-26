@@ -76,6 +76,7 @@ kbd,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
+  text-align: right;
 }
 
 dfn {

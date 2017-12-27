@@ -380,6 +380,26 @@ p {
 	padding-top: 260px;
 }
 
+/* sprites */
+
+.sprite {
+	height: 96px;
+	background-image: url('../images/sprite1.png');
+	height: 96px;
+	width: 96px;
+	padding-left: 40px;
+}
+
+.foodtruck:hover {
+    background-position: 0 96px;
+}
+
+div.sprite.foodtruck {
+	margin-left: 75px;
+}
+
+/* media queries */
+
 @media screen and (max-width: 480px) {
 	.foodtitle {
 		padding-left: 30px;
@@ -489,6 +509,11 @@ p {
 		margin-right: -100px;
 		width: 300px;
 	}
+	div.sprite.foodtruck {
+		margin-left: 25px;
+		margin-top: -20px;
+	}
+	
 }
 
 @media screen and (max-width: 767px) {
